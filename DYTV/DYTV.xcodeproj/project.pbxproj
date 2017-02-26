@@ -12,9 +12,11 @@
 		7A8B793D1E62D2B800EFCB30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A8B793B1E62D2B800EFCB30 /* Main.storyboard */; };
 		7A8B793F1E62D2B800EFCB30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A8B793E1E62D2B800EFCB30 /* Assets.xcassets */; };
 		7A8B79421E62D2B800EFCB30 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A8B79401E62D2B800EFCB30 /* LaunchScreen.storyboard */; };
+		ACB10A085E27B953BA61CC67 /* libPods-DYTV.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 376BC91D19E2C1D49AE88215 /* libPods-DYTV.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		376BC91D19E2C1D49AE88215 /* libPods-DYTV.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DYTV.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A8B79341E62D2B800EFCB30 /* DYTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DYTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A8B79371E62D2B800EFCB30 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7A8B79391E62D2B800EFCB30 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		7A8B793E1E62D2B800EFCB30 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7A8B79411E62D2B800EFCB30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7A8B79431E62D2B800EFCB30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA50153E24BEED7E56A80AE5 /* Pods-DYTV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DYTV.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DYTV/Pods-DYTV.debug.xcconfig"; sourceTree = "<group>"; };
+		FE88B96DA169996EA2C6EAB3 /* Pods-DYTV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DYTV.release.xcconfig"; path = "Pods/Target Support Files/Pods-DYTV/Pods-DYTV.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACB10A085E27B953BA61CC67 /* libPods-DYTV.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5AC9D81C435FEF3FAEFC23D8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				376BC91D19E2C1D49AE88215 /* libPods-DYTV.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7A8B792B1E62D2B800EFCB30 = {
 			isa = PBXGroup;
 			children = (
 				7A8B79361E62D2B800EFCB30 /* DYTV */,
 				7A8B79351E62D2B800EFCB30 /* Products */,
+				91FB838E9E541325E354FBE9 /* Pods */,
+				5AC9D81C435FEF3FAEFC23D8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +79,15 @@
 			path = DYTV;
 			sourceTree = "<group>";
 		};
+		91FB838E9E541325E354FBE9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CA50153E24BEED7E56A80AE5 /* Pods-DYTV.debug.xcconfig */,
+				FE88B96DA169996EA2C6EAB3 /* Pods-DYTV.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7A8B79461E62D2B800EFCB30 /* Build configuration list for PBXNativeTarget "DYTV" */;
 			buildPhases = (
+				A633AB5088F97B6E519BCC50 /* [CP] Check Pods Manifest.lock */,
 				7A8B79301E62D2B800EFCB30 /* Sources */,
 				7A8B79311E62D2B800EFCB30 /* Frameworks */,
 				7A8B79321E62D2B800EFCB30 /* Resources */,
+				87E64E5A9B54959B9ECCCB4D /* [CP] Embed Pods Frameworks */,
+				CFF0EF09EDAD50FBD1D91861 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		87E64E5A9B54959B9ECCCB4D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DYTV/Pods-DYTV-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A633AB5088F97B6E519BCC50 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CFF0EF09EDAD50FBD1D91861 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DYTV/Pods-DYTV-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7A8B79301E62D2B800EFCB30 /* Sources */ = {
@@ -256,6 +331,7 @@
 		};
 		7A8B79471E62D2B800EFCB30 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA50153E24BEED7E56A80AE5 /* Pods-DYTV.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 3G7X5WUBT4;
@@ -269,6 +345,7 @@
 		};
 		7A8B79481E62D2B800EFCB30 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE88B96DA169996EA2C6EAB3 /* Pods-DYTV.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 3G7X5WUBT4;
